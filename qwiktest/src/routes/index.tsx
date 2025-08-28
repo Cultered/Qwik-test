@@ -1,19 +1,15 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import { Link } from '@builder.io/qwik-city';
 
 export default component$(() => {
   return (
-    <>
-      <h1>Hi 👋</h1>
-      <div>
-        Can't wait to see what you build with qwik!
-        <br />
-        Happy coding.
-      </div>
-    </>
+    <div>
+      <h1>Home Page</h1>
+      <Link href="/showcase/">Go to Showcase</Link>
+    </div>
   );
 });
-
 export const head: DocumentHead = {
   title: "Welcome to Qwik",
   meta: [
